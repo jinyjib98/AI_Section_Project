@@ -1,8 +1,17 @@
 from flask import Flask
 
-app = Flask(__name__)
-
-@app.route('/')
 def create_app():
-    return 'hello'
+    app = Flask(__name__)
+
+    @app.route('/')
+    def index():
+        return 'Hello', 200
+    
+    @app.route('/morning')
+    def hello():
+        return 'good morning', 200
+    
+    return app
+
+
 
