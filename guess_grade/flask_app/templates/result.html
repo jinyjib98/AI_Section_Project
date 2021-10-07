@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+{% if pred %}
+    <center>
+    <h1>Result</h1><br/><br/>
+    
+    <h3>Your Predicted Score is:</h3> <h2>{{pred}}</h2> <h3>/ 100 </h3>
+    </center>
+{% endif %}
+{% endblock %}

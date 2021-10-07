@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <center>
+    <h1>Answer These Question</h1>
+    <form method="POST", action="{{url_for('guess_grade')}}">
+        <b> Failure : <input type="number", name='failure', placeholder="choose between 1 ~ 5"> <br/><br/>
+        Mother's education level : <input type="number", name='mom', placeholder="range 1 ~ 5"> <br/><br/>
+        higher : <input type="number", name='higher'> <br/><br/>
+        age : <input type="number", name='age', placeholder="write down your age"> <br/><br/>            
+        Father's education level : <input type="number", name='pap', placeholder="range 1 ~ 5"> <br/><br/>
+        go out : <input type="number", name='goout', placeholder="choose between 1 ~ 5"> <br/><br/>
+        romantic : <input type="number", name='romantic'> <br/><br/>
+        travel : <input type="number", name='travel', placeholder="choose between 1 ~ 5"> <br/><br/><br/></b>
+        <input type="submit", value='Start Predict!'>
+    </form>
+    
+    </center>
+    
+{% endblock %}
