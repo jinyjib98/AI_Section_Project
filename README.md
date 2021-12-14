@@ -1,2 +1,2 @@
-# AI_Sprint_Project
-Sprint Project Archives
+# AI_Section_Project
+Section Project Archives
